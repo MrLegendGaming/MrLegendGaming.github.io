@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.nav-bar {
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+
+    display:flex;
+    gap: 35px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.nav-bar a {
+    font-family: Inter, Calibri, sans-serif;
+    font-size: 19px;
+    color: white;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 16px;
+    transition: 0.3s ease;
+
+}
+
+.nav-bar a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 91%;
+    height: 2px;
+    bottom: 8px;
+    left: 5%;
+    background-color: white;
+    transform: ScaleX(0);
+    transition: 0.3s ease;
+}
+
+.nav-bar a:hover {
+    transform: translateY(-5px);
+}
+
+.nav-bar a:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-bar a:focus {
+    outline: none;
+}
+
+#back-to-top {
+    position: fixed;
+    right: -100px;
+    bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 75px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    font-size: 50px !important;
+
+    color: white;
+    background-color: rgba(0, 0, 143, 0.95);
+    border: 2px solid rgba(0, 0, 51, 0);
+
+    z-index: 2;
+    transition: .5s ease;
+}
+
+#back-to-top:hover {
+    border-radius: 45%;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+#back-to-top:hover + #back-to-top-text {
+    display: flex;
+    right: 115px;
+    opacity: 100;
+    transform: scaleZ(1);
+}
+
+#back-to-top-text {
+    position: fixed;
+    right: 100px;
+    bottom: 39px;
+
+    transform:scaleZ(0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    width: 200px;
+    height: 50px;
+
+    border-radius: 15px;
+
+    font-family: Inter, Calibri, sans-serif;
+    font-size: 20px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    z-index: 2;
+    transition: .5s ease;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}

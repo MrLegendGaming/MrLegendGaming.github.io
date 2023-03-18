@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+.hacker-text {
+    position: absolute;
+    left: 0; right: 0;
+    text-align: center;
+
+    padding-top: 20px;
+
+    font-family: Inter, Calibri, sans-serif;
+    font-size: 7vh;
+    color: white;
+
+    overflow: none;
+
+    transition: 0.5s ease;
+}
+
+#personality {
+    top: 107vh;
+}
+
+#education {
+    top: 230vh;
+}
+
+#skills {
+    top: 363vh;
+    
+}
+
+#contact {
+    top: 496vh;
+}
+
+.line {
+    position: absolute;
+
+    width: 34%;
+
+    background-color: white;
+}
+
+#line1 {
+    top: 118vh;
+    left: 1%;
+}
+
+#line2 {
+    top: 241vh;
+    right: 1%;
+}
+
+#line3 {
+    top: 118vh;
+    right: 1%;
+}
+
+#line4 {
+    top: 241vh;
+    left: 1%;
+}
+
+#line5 {
+    top: 374vh;
+    left: 1%;
+}
+
+#line6 {
+    top: 374vh;
+    right: 1%;
+}
+
+#line7 {
+    top: 507vh;
+    left: 1%;
+}
+
+#line8 {
+    top: 507vh;
+    right: 1%;
+}
