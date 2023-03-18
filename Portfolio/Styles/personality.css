@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+:root {
+    --personality1: rgba(255, 255, 255, 0.9);
+    --personality2: rgba(255, 255, 255, 0.7);
+
+}
+
+#personality-box {
+    position: absolute;
+    top: 137vh;
+    
+    overflow-x: hidden;
+    
+    width: 99%;
+    height: 600px;
+    
+}
+
+#personality-text {
+    position: absolute;
+    left: 5%;
+    
+    display: block;
+    width: 70%;
+    height: 95%;
+    
+    border: 7px solid var(--personality1);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    background-size: 100% 9px;
+    
+    background-image: linear-gradient(
+    var(--personality1),
+    var(--personality1), 6px,
+    var(--personality2) 6px,
+    var(--personality2) 18px
+    );
+    
+    animation: pan-overlay 22s infinite linear;
+    
+}
+
+#personality-paragraph {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    height: 45%;
+
+    color: black;
+    font-family: Inter, Calibri, sans-serif;
+    font-size: 23px;
+    text-shadow: 1px 1px 1px black;
+
+    
+}
+
+.grid {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    
+    display: grid;
+    gap: 20px;
+
+    overflow-x: hidden;
+
+    transform: translateY(-50%);
+}
+
+.grid div {
+    width: 175px;
+    height: 175px;
+    
+    border-radius: 15px;
+    
+    font-family: Inter, Calibri, sans-serif;
+    font-size: 23px;
+    background-color: hsla(0, 0%, 100%, 0.95);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 2px solid black;
+    
+    transition: 0.5s ease;
+}
+
+.grid div:hover{
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#science {
+    color: blue;
+}
+
+#philosophy {
+    color:darkorchid;
+}
+
+#rapport {
+    color: yellow;
+
+}
+
+#personality-icons {
+    font-size: 50px !important;
+}
+
+@keyframes pan-overlay {
+    from {
+        background-position: 0% 0%;
+    }
+    
+    to {
+        background-position: 0% -100%;
+    }
+}
