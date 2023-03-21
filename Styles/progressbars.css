@@ -47,16 +47,16 @@
 
 #html-progress {
     filter: drop-shadow(0 0 5px #33ff33);
+
 }
 
 #java-progress {
     filter: drop-shadow(0 0 5px #33cfff);
-    animation: anim_circle-java 1s ease-in-out forwards;
+
 }
 
 #js-progress {
     filter: drop-shadow(0 0 5px #fff133);
-    animation: anim_circle-js 1s ease-in-out forwards;
 }
 
 .circle-html {

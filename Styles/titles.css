@@ -29,8 +29,12 @@
     
 }
 
-#contact {
+#projects {
     top: 496vh;
+}
+
+#contact {
+    top: 629vh;
 }
 
 .line {
@@ -78,5 +82,15 @@
 
 #line8 {
     top: 507vh;
+    right: 1%;
+}
+
+#line9 {
+    top: 640vh;
+    left: 1%;
+}
+
+#line10 {
+    top: 640vh;
     right: 1%;
 }

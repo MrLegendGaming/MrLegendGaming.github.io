@@ -4,14 +4,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 526vh;
-
+    top: 659vh;
+    
     display: grid;
     
     gap: 20px;
     height: 256px;
     text-align: left;
-
+    
     justify-items: center;
     justify-content: space-evenly;
     
@@ -42,14 +42,16 @@
 #contact-me-section a {
     color: inherit;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 #discord {
     background-image: url(https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x225.jpg);
     background-size: cover;
-
+    
     box-shadow: 0 0 20px rgba(89, 102, 243, 1);
-
+    
     border: 1px solid rgba(89, 102, 243, 1);
 }
 
@@ -59,18 +61,39 @@
     background-size: cover;
     
     box-shadow: 0 0 20px rgba(80, 171, 241, 1);
-
+    
     border: 1px solid rgba(80, 171, 241, 1);
 }
 
 #mail {
     background-image: url(https://i.ibb.co/QQv8zM9/Mail.png);
     background-size: cover;
-
+    
     box-shadow: 0 0 20px rgba(99, 174, 255, 1);
 }
 
 #contact-me-section a:hover {
     transform: translateY(-15px);
     
+}
+
+.tooltip {
+    top: -55px;
+    width: fit-content;
+    opacity: 0%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    
+    transition: 0.5s ease;
+}
+
+a:hover > span {
+    opacity: 100%;
 }

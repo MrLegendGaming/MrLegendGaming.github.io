@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 :root {
-    --personality1: rgba(255, 255, 255, 0.9);
-    --personality2: rgba(255, 255, 255, 0.7);
+    --personality1: rgba(242, 255, 242, 0.7);
+    --personality2: rgba(242, 255, 242, 0.5);
+
+    --pan-background: url();
 
 }
 
@@ -25,7 +27,7 @@
     width: 70%;
     height: 95%;
     
-    border: 7px solid var(--personality1);
+    border: 4px solid var(--personality1);
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
 
@@ -42,20 +44,41 @@
     
 }
 
+#screen-image {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    height: 100%;
+    width: 100%;
+    background-image: var(--pan-background);
+    background-size: 300%;
+    opacity: 60%;
+
+    border: 4px solid var(--personality1);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    animation: pan-image 15s linear infinite;
+
+}
+
 #personality-paragraph {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
+
+    text-align: justify;
+
     transform: translate(-50%, -50%);
 
     width: 90%;
     height: 45%;
+    
 
-    color: black;
+    color: white;
     font-family: Inter, Calibri, sans-serif;
     font-size: 23px;
-    text-shadow: 1px 1px 1px black;
 
     
 }
@@ -106,11 +129,11 @@
 }
 
 #philosophy {
-    color:darkorchid;
+    color:rgb(33, 145, 209);
 }
 
 #rapport {
-    color: yellow;
+    color: rgb(23, 253, 253);
 
 }
 
@@ -127,3 +150,55 @@
         background-position: 0% -100%;
     }
 }
+
+@keyframes pan-image {  
+    0% {
+      background-position: 36% 42%;
+      background-size: 200%;
+    }
+    
+    20% {
+      background-position: 30% 35%;
+      background-size: 200%;
+    }
+    
+    20.0001% { /* -- View 2 -- */
+      background-position: 60% 85%;
+      background-size: 500%;
+    }
+    
+    40% {
+      background-position: 49% 81%;
+      background-size: 500%;
+    }
+    
+    40.0001% { /* -- View 3 -- */
+      background-position: 80% 42%;
+      background-size: 300%;
+    }
+    
+    60% {
+      background-position: 84% 33%;
+      background-size: 300%;
+    }
+    
+    60.0001% { /* -- View 4 -- */
+      background-position: 0% 0%;
+      background-size: 300%;
+    }
+    
+    80% {
+      background-position: 15% 4%;
+      background-size: 300%;
+    }
+    
+    80.0001% { /* -- View 5 -- */
+      background-position: 80% 10%;
+      background-size: 300%;
+    }
+    
+    100% {
+      background-position: 72% 14%;
+      background-size: 300%;
+    }
+  }
