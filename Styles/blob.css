@@ -9,7 +9,7 @@
     z-index: -1;
     margin-top: -10vh;
     margin-left: -10vw;
-	-webkit-backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(12vmax);
     backdrop-filter: blur(12vmax);
 }
     
