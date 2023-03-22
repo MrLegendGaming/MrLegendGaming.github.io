@@ -18,6 +18,7 @@ body {
     position: fixed;
     z-index: -1;
     
+	-ms-backdrop-filter: blur(12vmax);
 	-moz-backdrop-filter: blur(12vmax);
 	-webkit-backdrop-filter: blur(12vmax);
     backdrop-filter: blur(12vmax);
