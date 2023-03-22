@@ -22,7 +22,6 @@ body {
 	-webkit-backdrop-filter: blur(12vmax);
     backdrop-filter: blur(12vmax);
 
-    border: 1px solid blue;
 }
     
 #blob {
