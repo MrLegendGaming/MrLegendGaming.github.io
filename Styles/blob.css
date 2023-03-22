@@ -1,16 +1,28 @@
+body {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
 .blob-body {
     background-color: black;
 }
 
 #background-blur {
-    width: 120vw;
-    height: 120vh;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -1;
-    margin-top: -10vh;
-    margin-left: -10vw;
-    -webkit-backdrop-filter: blur(12vmax);
+    
+	-moz-backdrop-filter: blur(80px);
+	-webkit-backdrop-filter: blur(80px);
     backdrop-filter: blur(12vmax);
+
+    border: 1px solid crimson;
 }
     
 #blob {
